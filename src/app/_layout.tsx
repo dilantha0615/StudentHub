@@ -1,13 +1,13 @@
-import { Tabs } from 'expo-router';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { Tabs } from "expo-router";
 
 export default function RootLayout() {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: 'blue' }}>
+    <Tabs screenOptions={{ tabBarActiveTintColor: "blue" }}>
       <Tabs.Screen
-        name="home"
+        name="(home)"
         options={{
-          title: 'Home',
+          title: "Home",
           headerShown: false, // Hidden because the Stack inside will have its own header
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="home" size={24} color={color} />
@@ -17,7 +17,7 @@ export default function RootLayout() {
       <Tabs.Screen
         name="clock"
         options={{
-          title: 'Live Clock',
+          title: "Live Clock",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="clock" size={24} color={color} />
           ),

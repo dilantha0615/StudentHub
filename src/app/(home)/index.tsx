@@ -1,5 +1,5 @@
-import { View, Text, ScrollView, Pressable, StyleSheet } from 'react-native';
-import { router } from 'expo-router';
+import { router } from "expo-router";
+import { Pressable, ScrollView, StyleSheet, Text } from "react-native";
 
 export default function HomeScreen() {
   return (
@@ -8,8 +8,11 @@ export default function HomeScreen() {
 
       {/* Pressable detects the 'pressed' state for better touch feedback */}
       <Pressable
-        style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]}
-        onPress={() => router.push('/home/details')}
+        style={({ pressed }) => [
+          styles.button,
+          pressed && styles.buttonPressed,
+        ]}
+        onPress={() => router.push("/(home)/details")}
       >
         <Text style={styles.buttonText}>View My Digital ID Card</Text>
       </Pressable>
@@ -21,27 +24,27 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#00f4f8',
+    backgroundColor: "#00f4f8",
   },
   header: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginBottom: 250,
     marginTop: 40,
-    textAlign: 'center',
+    textAlign: "center",
   },
   button: {
-    backgroundColor: 'blue',
+    backgroundColor: "blue",
     padding: 15,
     borderRadius: 10,
-    alignItems: 'center',
+    alignItems: "center",
   },
   buttonPressed: {
     opacity: 0.6,
   },
   buttonText: {
-    color: 'white',
+    color: "white",
     fontSize: 16,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
 });
