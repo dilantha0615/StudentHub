@@ -11,8 +11,8 @@ export default function DetailsScreen() {
         source={require("D:\\Academic Files\\3 rd Year\\Sem 02\\COST 32152-Mobile Application Development\\Labs\\Lab03\\StudentHub\\StudentHub\\assets\\images\\user.png")}
         style={styles.image}
       />
-      <Text style={styles.text}>Name: Enter your name here</Text>
-      <Text style={styles.text}>Student ID: Enter your ID here</Text>
+      <Text style={styles.text}>Name: Dilantha Sandaruwan</Text>
+      <Text style={styles.text}>Student ID: PE/2022/014</Text>
       <Text style={styles.text}>Course: Mobile Application Development</Text>
     </View>
   );
